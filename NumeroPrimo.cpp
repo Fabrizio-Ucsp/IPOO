@@ -9,10 +9,10 @@ int main(){
              a++;  
             }  
          }  
-         if(a!=2){  
-              cout<<"No es Primo";  
+         if(a!=2){ 
+              cout<<"El numero no es Primo";  
             }else{  
-                cout<<"Si es Primo";  
+                cout<<"El numero si es Primo";  
          }  
     return 0;  
 }  
