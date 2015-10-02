@@ -7,15 +7,19 @@ using namespace std;
 int main(){
 	Vector vec1;
 	Circulo cir1;
-	vec1.start.x = 0.0;
-	vec1.start.y = 0.0;
-	vec1.end.x = 0.0;
-	vec1.end.y = 5.0;
+	cout<<"Ingrese el valor de x inicial :"<<endl;
+	cin>>vec1.start.x;
+	cout<<"Ingrese el valor de y inicial :"<<endl;
+	cin>>vec1.start.y;
+	cout<<"Ingrese el valor de x final :"<<endl;
+	cin>>vec1.end.x;
+	cout<<"Ingrese el valor de y final :"<<endl;
+	cin>>vec1.end.y;
+	cout<<" "<<endl;
 	double distance = vec1.distance();
-	cout<< distance <<endl;
 	vec1.print();
+	cout<< "La distancia de los 2 puntos es : "<<distance <<endl;
 	cir1.radio=distance;
 	double radio= cir1.area();
-	cout<< radio <<endl;
-	
+	cout<< "El radio de la cinrcunferencia: "<<radio <<endl;
 }
