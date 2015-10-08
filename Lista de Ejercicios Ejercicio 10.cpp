@@ -1,21 +1,19 @@
-#include <fstream>
-#include <string>
-#include <iostream>	
-using namespace std;
-string impr(string line);
+#include<iostream> 
+#include<ctime> 
+#include<stdlib.h> 
+using namespace std ; 
 int main () {
-	string line;
-	impr(line);
-	return 0;
+	int num; int list[400000]; 
+	cout<<"Ingrese un numero: "<<endl; 
+	cin>>num; 
+	for(int i=0;i<400000;i++){
+		list[i]=rand()%100; 
+		cout<<list[i]<<endl;
+	} 
+	for (int i=0;i<400000;i++){ 
+		if (num == i)
+		cout<<"el numero: "<<num<<" se encuentra en el arreglo"<<endl;
+	}
 }
-string impr(string line){
-	 ifstream myfile ("texto.txt");
-	 if (myfile.is_open())
-	 {
-		 while ( getline (myfile,line) )
-		 {
-			 cout << line << '\n';
-		 }
-		 myfile.close();
-	 }
- }
+	
+
