@@ -1,23 +1,25 @@
 #include <iostream>
-#include <string>
 #include <stdio.h> 
-#include <string.h> 
-#include <conio.h>
-#include <iostream>
+#define tam 500
+int no_repetitions(char palabra[tam],char resultado[tam]);
 using namespace std; 
 int main() 
 { 
-	char resultado[27]=""; 
-	char palabra[50]; 
-	int i=0,j=0; 
+	char resultado[tam]=""; 
+	char palabra[tam]; 
 	cout<<"Ingresa una palabra"<<endl;
-	cin>>palabra; 
+	cin.getline(palabra,tam);
+	int i=0,j=0;
+	no_repetitions(palabra,resultado);
+	cout<<"El palabra sin letras repetidas seria: "<<resultado<<endl; 
+	return 0;
+}
+
+int no_repetitions(char palabra[tam],char resultado[tam]){
+	int i=0,j=0;
 	while(palabra[i]) { 
 		if(!strchr(resultado,palabra[i])) 
 			resultado[j++]=palabra[i]; 
 		i++; 
 	} 
-	resultado[j]='\0'; 
-	cout<<"El palabra sin letras repetidas seria: "<<resultado<<endl; 
-	return 0;
 }
