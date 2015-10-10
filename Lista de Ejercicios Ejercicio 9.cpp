@@ -1,7 +1,12 @@
 #include <iostream>
 #include <string>
 using namespace std;
+string TamanoyPocisionamiento();
 int main(){
+	TamanoyPocisionamiento();
+	return 0;
+}
+string TamanoyPocisionamiento(){
 	string nombre;
 	char abc[27]="abcdefghijklmnopqrstuvwxyz";
 	cout<<"Ingrese su nombre: "<<endl;
@@ -88,5 +93,4 @@ int main(){
 			cout<<nombre[i]<<" "<<25<<endl;
 		}
 	}
-	return 0;
 }
