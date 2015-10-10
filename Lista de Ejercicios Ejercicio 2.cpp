@@ -3,8 +3,7 @@
 #define tam 500
 int no_repetitions(char palabra[tam],char resultado[tam]);
 using namespace std; 
-int main() 
-{ 
+int main() { 
 	char resultado[tam]=""; 
 	char palabra[tam]; 
 	cout<<"Ingresa una palabra"<<endl;
@@ -14,7 +13,6 @@ int main()
 	cout<<"El palabra sin letras repetidas seria: "<<resultado<<endl; 
 	return 0;
 }
-
 int no_repetitions(char palabra[tam],char resultado[tam]){
 	int i=0,j=0;
 	while(palabra[i]) { 
